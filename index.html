@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCD</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="kcdForm">
+            <table>
+                <tr>
+                    <td><span class="maroon">DOB : </span></td>
+                    <td><input type="date" id="dob" class="form-control" autocomplete="off" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="maroon">Degrees : </span></td>
+                    <td><input ype="number" id="degrees" min="0" max="29" class="form-control" autocomplete="off"
+                            required placeholder="Enter Degrees">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="maroon">Minutes : </span></td>
+                    <td><input ype="number" id="minutes" min="0" max="59" class="form-control" autocomplete="off"
+                            required placeholder="Enter Minutes">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="maroon">Seconds : </span></td>
+                    <td><input ype="number" id="seconds" min="0" max="59" class="form-control" autocomplete="off"
+                            required placeholder="Enter Seconds">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="maroon" id="nakshtra">Nakshatra : </span></td>
+                    <td><select id="nakshatra" class="form-select form-select-sm" autocomplete="off" required>
+                            <option value="Asw">Ashwini</option>
+                            <option value="Bha">Bharani</option>
+                            <option value="Kri">Krittika</option>
+                            <option value="Roh">Rohini</option>
+                            <option value="Mri">Mrigashira</option>
+                            <option value="Ard">Ardra</option>
+                            <option value="Pun">Punarvasu</option>
+                            <option value="Pus">Pushya</option>
+                            <option value="Ash">Ashlesha</option>
+                            <option value="Mag">Magha</option>
+                            <option value="PPh">Purva Phalguni</option>
+                            <option value="UPh">Uttara Phalguni</option>
+                            <option value="Has">Hasta</option>
+                            <option value="Chi">Chitra</option>
+                            <option value="Swa">Swati</option>
+                            <option value="Vis">Vishaka</option>
+                            <option value="Anu">Anurada</option>
+                            <option value="Jye">Jyeshta</option>
+                            <option value="Moo">Moola</option>
+                            <option value="PPh">Purva Ashadha</option>
+                            <option value="UAs">Uttara Ashadha</option>
+                            <option value="Shr">Shravana</option>
+                            <option value="Dha">Dhanishta</option>
+                            <option value="Sat">Shatabhishak</option>
+                            <option value="PBh">Purva Bhadrapada</option>
+                            <option value="UBh">Uttara Bhadrapada</option>
+                            <option value="Rev">Revati</option>
+                        </select></td>
+                </tr>
+            </table>
+            <button type="submit" value="Submit" id="submit" class="btn btn-sm btn-secondary">Submit</button>
+            <button type="reset" value="Reset" id="reset" class="btn btn-sm btn-secondary">Reset</button>
+        </form>
+        <div class="blue header">Kalachakra Dasa (From Moon of D-1, <span id="dp"></span>, Deha: <span
+                id="deha"></span>, Jiva: <span id="jeeva"></span>):
+        </div>
+        <div class="dasha-tables">
+        </div>
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script type="module" src="./scripts/script.js"></script>
+</body>
+
+</html>
